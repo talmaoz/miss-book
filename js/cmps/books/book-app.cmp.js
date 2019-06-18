@@ -6,8 +6,11 @@ export default {
     template: `
         <section class="book-app">
             <h1>Book App</h1>
+            
             <book-filter @set-filter="setFilter"></book-filter>
+            
             <book-list 
+                v-if="!selectedBook"
                 :books="booksForDisplay"
                 @book-selected="setSelectedBook"
             >
@@ -18,7 +21,7 @@ export default {
         return {
             filter: null,
             books: bookService.query(),
-            selectedBook: null
+            selectedBook: null,
         }
     },
     computed: {
@@ -32,7 +35,7 @@ export default {
             this.filter = filter
         },
         setSelectedBook(selectedBook) {
-            console.log('selectBook in book-app:\n', selectedBook)
+            this.selectedBook = selectedBook
         }
     },
     components: {

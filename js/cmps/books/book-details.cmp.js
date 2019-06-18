@@ -7,7 +7,7 @@ Vue.component('book-details', {
             <h4>{{book.price}}$</h4>
             <h4>Published: {{book.publishedDate}}</h4>
             <h4>#Pages: {{book.pages}}</h4>
-            <h4 v-if:"book.isOnSale">{{saleTxt}}</h4>
+            <h4 v-if="book.isOnSale">{{saleTxt}}</h4>
             <img v-bind:title="book.title" v-bind:src="book.thumbnail" />
         </div>
     `,
