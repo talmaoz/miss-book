@@ -1,0 +1,13 @@
+.my-counter {
+    background-color: antiquewhite;
+    padding: 5px;
+    text-align: center;
+    user-select: none;
+}
+
+.my-counter .danger {
+    color: red;
+}
+.my-counter .safe {
+    color: darkgreen;
+}

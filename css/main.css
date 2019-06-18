@@ -1,0 +1,37 @@
+
+/* Components CSS */
+@import './counter.css';
+@import './user-details.css';
+
+
+body {
+    background-color: lightgreen;
+}
+
+.more-info {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.todo-done {
+    text-decoration: line-through;
+}
+
+.todo-app {
+    background-color: azure;
+    padding: 10px;
+}
+
+.car-list {
+    list-style: none;
+}
+.car-list li {
+    display: inline-block;
+    padding: 20px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.car-list img {
+    width: 100px;
+}
