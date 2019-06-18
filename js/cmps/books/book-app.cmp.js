@@ -7,13 +7,18 @@ export default {
         <section class="book-app">
             <h1>Book App</h1>
             <book-filter @set-filter="setFilter"></book-filter>
-            <book-list :books="booksForDisplay"></book-list>
+            <book-list 
+                :books="booksForDisplay"
+                @book-selected="setSelectedBook"
+            >
+            </book-list>
         </section>
     `,
     data() {
         return {
             filter: null,
-            books: bookService.query()
+            books: bookService.query(),
+            selectedBook: null
         }
     },
     computed: {
@@ -25,6 +30,9 @@ export default {
     methods: {
         setFilter(filter) {
             this.filter = filter
+        },
+        setSelectedBook(selectedBook) {
+            console.log('selectBook in book-app:\n', selectedBook)
         }
     },
     components: {
