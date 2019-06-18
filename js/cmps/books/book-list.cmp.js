@@ -5,9 +5,9 @@ export default {
     <section>
             <h1>Books</h1>
             <ul class="book-list">
-                <car-preview
-                    v-for="currentBook in books" v-bind:car="currentBook">
-                </car-preview>
+                <book-preview
+                    v-for="currentBook in books" v-bind:book="currentBook">
+                </book-preview>
             </ul>
         </section>
     `,

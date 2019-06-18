@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb7d03f-645e-401a-a096-d2d822e9a813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/book/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/book/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/book/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/car/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/book/4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cmps/books/book-list.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-list.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,20 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="155">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/cmps/books/book-list.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -97,10 +101,10 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/cmps/car/car-app.cmp.js" />
         <option value="$PROJECT_DIR$/js/cmps/car/book-app.cmp.js" />
-        <option value="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/cmps/books/book-app.cmp.js" />
         <option value="$PROJECT_DIR$/js/cmps/books/book-list.cmp.js" />
+        <option value="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" />
       </list>
     </option>
   </component>
@@ -166,6 +170,17 @@
               <item name="miss-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="miss-book" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miss-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-book" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miss-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-book" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miss-book" type="b2602c69:ProjectViewProjectNode" />
@@ -298,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560861064713</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="WIP">
+      <created>1560861196631</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560861196631</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2454000" />
+    <option name="totallyTimeSpent" value="2561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -341,7 +363,8 @@
     <MESSAGE value="Cleaned book-app and book-list cmps" />
     <MESSAGE value="Renamed stuff in book-app" />
     <MESSAGE value="&#10;Renamed some more stuff in book-app" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Renamed some more stuff in book-app" />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -416,17 +439,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/cmps/books/book-list.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
