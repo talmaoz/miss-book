@@ -1,21 +1,46 @@
-import utilService from "./util.service.js";
-
-
-
-var cars = [{ id: 1, vendor: 'Mazdi', price: 89.78 }, { id: 2, vendor: 'Toyoka', price: 98.21 }];
-
-function query() {
-    return cars;
-}
-
-function save(carData) {
-    carData.id = utilService.makeId();
-    cars.push(carData);
-}
-
-
+import {storageService} from './storage.service.js'
+import {utilService} from './util.service.js'
 
 export default {
-    query,
-    save
+    query
 }
+
+const BOOKS_KEY = 'books';
+
+var booksDB = [];
+
+function query() {
+    var books = storageService.load(BOOKS_KEY);
+    if (!books) {
+        books = generateBooks();
+        storageService.store(BOOKS_KEY, books)
+    }
+    booksDB = books;
+    return booksDB;
+}
+
+
+
+
+function generateBooks() {
+    var books = []
+    for (let index = 0; index < 20; index++) {
+        var book = createBook()
+        books.push(book)
+
+    }
+    return books;
+}
+
+function createBook() {
+    var imgBaseUrl = 'http://coding-academy.org/books-photos/'
+    var book = {
+        id: utilService.makeId(),
+        title: utilService.makeLorem(10),
+        publishedDate: utilService.getRandomInt(1900, 2000),
+        thumbnail: imgBaseUrl + utilService.getRandomInt(1, 21) + '.jpg',
+        price: utilService.getRandomInt(50, 400),
+    }
+    return book;
+}
+

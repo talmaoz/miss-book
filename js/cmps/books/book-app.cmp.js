@@ -19,7 +19,7 @@ export default {
     computed: {
         booksForDisplay() {
             if (!this.filter) return this.books;
-            return this.books.filter(book => book.vendor.includes(this.filter.txt))
+            return this.books.filter(book => book.title.includes(this.filter.txt))
         }
     },
     methods: {
