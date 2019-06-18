@@ -1,13 +1,13 @@
 import bookService from '../../services/book.service.js'
-import bookList from './book-list.cmp.js'
-import bookFilter from './book-filter.cmp.js'
+import bookList    from './book-list.cmp.js'
+import bookFilter  from './book-filter.cmp.js'
 
 export default {
     template: `
-        <section class="car-app">
+        <section class="book-app">
             <h1>Book App</h1>
-            <car-filter @set-filter="setFilter"></car-filter>
-            <car-list :books="booksForDisplay"></car-list>
+            <book-filter @set-filter="setFilter"></book-filter>
+            <book-list :books="booksForDisplay"></book-list>
         </section>
     `,
     data() {
@@ -15,9 +15,6 @@ export default {
             filter: null,
             books: bookService.query()
         }
-    },
-    created() {
-        // created
     },
     computed: {
         booksForDisplay() {
@@ -31,8 +28,11 @@ export default {
         }
     },
     components: {
-        carList: bookList,
-        carFilter: bookFilter
-    }
+        bookList,
+        bookFilter
+    },
+    created() {
+        // created
+    },
 }
 
