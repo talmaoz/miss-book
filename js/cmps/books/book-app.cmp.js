@@ -1,38 +1,38 @@
-import carService from '../../services/book.service.js'
-import carList from './book-list.cmp.js'
-import carFilter from './book-filter.cmp.js'
+import bookService from '../../services/book.service.js'
+import bookList from './book-list.cmp.js'
+import bookFilter from './book-filter.cmp.js'
 
 export default {
     template: `
         <section class="car-app">
             <h1>Book App</h1>
             <car-filter @set-filter="setFilter"></car-filter>
-            <car-list :books="carsForDisplay"></car-list>
+            <car-list :books="booksForDisplay"></car-list>
         </section>
     `,
     data() {
         return {
             filter: null,
-            books: carService.query()
+            books: bookService.query()
         }
     },
     created() {
-        console.log('Created!');
+        // created
     },
     computed: {
-        carsForDisplay() {
+        booksForDisplay() {
             if (!this.filter) return this.books;
-            return this.books.filter(car => car.vendor.includes(this.filter.txt))
+            return this.books.filter(book => book.vendor.includes(this.filter.txt))
         }
     },
     methods: {
         setFilter(filter) {
-            console.log('Car App got the filter', filter);
             this.filter = filter
         }
     },
     components: {
-        carList,
-        carFilter
+        carList: bookList,
+        carFilter: bookFilter
     }
 }
+
