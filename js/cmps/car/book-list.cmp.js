@@ -1,5 +1,5 @@
-import './car-preview.cmp.js';
-// import './car-filter.cmp.js';
+import './book-preview.cmp.js';
+// import './book-filter.cmp.js';
 
 import carService from '../../services/car.service.js';
 

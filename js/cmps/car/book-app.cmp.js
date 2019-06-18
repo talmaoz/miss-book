@@ -1,11 +1,11 @@
 import carService from '../../services/car.service.js'
-import carList from './car-list.cmp.js'
-import carFilter from './car-filter.cmp.js'
+import carList from './book-list.cmp.js'
+import carFilter from './book-filter.cmp.js'
 
 export default {
     template: `
         <section class="car-app">
-            <h1>Car App</h1>
+            <h1>Book App</h1>
             <car-filter @set-filter="setFilter"></car-filter>
             <car-list :cars="carsForDisplay"></car-list>
         </section>

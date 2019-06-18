@@ -1,6 +1,6 @@
 'use strict';
 
-import carApp from './cmps/car/car-app.cmp.js';
+import carApp from './cmps/car/book-app.cmp.js';
 
 
 var app = new Vue({
