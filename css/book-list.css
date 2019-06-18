@@ -1,14 +1,32 @@
 .book-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .book-list li {
-    display: inline-block;
+    display: block;
     padding: 15px;
-    background-color: lightblue;
+    background-color: antiquewhite;
     margin: 3px;
+    min-width: 300px;
+}
+
+.book-list h3, .book-list h4 {
+    text-align: center;
+}
+
+.book-list h3 {
+    margin: 3px;
+    font-size: 30px;
+}
+
+.book-list h4 {
+    margin: 2px;
+    font-size: 20px;
 }
 
 .book-list img {
-    width: 140px;
-    height: 150px;
+    width: 100%;
+    height: 300px;
+    margin: 3px auto;
 }
