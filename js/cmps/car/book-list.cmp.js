@@ -1,7 +1,7 @@
 import './book-preview.cmp.js';
 // import './book-filter.cmp.js';
 
-import carService from '../../services/car.service.js';
+import carService from '../../services/book.service.js';
 
 
 export default {
