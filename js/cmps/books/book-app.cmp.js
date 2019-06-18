@@ -7,13 +7,13 @@ export default {
         <section class="car-app">
             <h1>Book App</h1>
             <car-filter @set-filter="setFilter"></car-filter>
-            <car-list :cars="carsForDisplay"></car-list>
+            <car-list :books="carsForDisplay"></car-list>
         </section>
     `,
     data() {
         return {
             filter: null,
-            cars: carService.query()
+            books: carService.query()
         }
     },
     created() {
@@ -21,8 +21,8 @@ export default {
     },
     computed: {
         carsForDisplay() {
-            if (!this.filter) return this.cars;
-            return this.cars.filter(car => car.vendor.includes(this.filter.txt))
+            if (!this.filter) return this.books;
+            return this.books.filter(car => car.vendor.includes(this.filter.txt))
         }
     },
     methods: {
