@@ -7,8 +7,9 @@
     display: block;
     padding: 15px;
     background-color: antiquewhite;
-    margin: 3px;
+    margin: 15px;
     min-width: 300px;
+    box-shadow: 10px 10px 19px -1px rgba(194,31,91,1);
 }
 
 .book-list h3, .book-list h4 {

@@ -33,13 +33,15 @@ function generateBooks() {
 }
 
 function createBook() {
-    var imgBaseUrl = 'http://coding-academy.org/books-photos/'
-    var book = {
+    let imgBaseUrl = 'http://coding-academy.org/books-photos/'
+    let book = {
         id: utilService.makeId(),
         title: utilService.makeLorem(10),
         publishedDate: utilService.getRandomInt(1900, 2000),
         thumbnail: imgBaseUrl + utilService.getRandomInt(1, 21) + '.jpg',
         price: utilService.getRandomInt(50, 400),
+        pages: utilService.getRandomInt(50, 900),
+        isOnSale: utilService.getRandomInt(0, 100) > 80,
     }
     return book;
 }
