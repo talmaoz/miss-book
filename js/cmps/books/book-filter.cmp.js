@@ -1,8 +1,12 @@
 export default {
     template: `
         <section class="book-filter">
-            <h1>Books Filter</h1>
-            <input type="text" v-model="filterBy.txt" @input="emitFilter" />
+            <label>Filter Books by Name:</label>
+            <input 
+                type="text"
+                v-model="filterBy.txt"
+                @input="emitFilter" 
+            />
         </section>
     `,
     data() {
