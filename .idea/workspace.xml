@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb7d03f-645e-401a-a096-d2d822e9a813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-app.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/car/book-app.cmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-list.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/car/book-list.cmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/services/car.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/services/book.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-app.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-app.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-filter.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-filter.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-list.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-list.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cmps/car/book-preview.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/services/book.service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -46,7 +57,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/cmps/car/book-app.cmp.js">
+        <entry file="file://$PROJECT_DIR$/js/cmps/books/book-app.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
               <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
@@ -88,6 +99,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/cmps/car/car-app.cmp.js" />
         <option value="$PROJECT_DIR$/js/cmps/car/book-app.cmp.js" />
+        <option value="$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js" />
       </list>
     </option>
   </component>
@@ -130,7 +142,7 @@
               <item name="C:\GitProjects\vue-2\miss-book" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="cmps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="car" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="books" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="miss-book" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -170,7 +182,7 @@
               <item name="miss-book" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="cmps" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miss-book" type="b2602c69:ProjectViewProjectNode" />
@@ -243,16 +255,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560859775908</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Renamed car.service to book.service">
+      <created>1560859817355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560859817355</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1279000" />
+    <option name="totallyTimeSpent" value="1441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,7 +299,9 @@
     <MESSAGE value="Deleted redundant cmps and services" />
     <MESSAGE value="Deleted redundant css files" />
     <MESSAGE value="Renamed all cmps (but not parent dir &lt;proj&gt;/js/cmps/car)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed all cmps (but not parent dir &lt;proj&gt;/js/cmps/car)" />
+    <MESSAGE value="Renamed car.service to book.service" />
+    <MESSAGE value="Renamed .../js/cmps/car to js/cmps/book" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed .../js/cmps/car to js/cmps/book" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -323,13 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/cmps/car/book-preview.cmp.js">
+    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-filter.cmp.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/cmps/car/book-filter.cmp.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/cmps/car/book-list.cmp.js">
+    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-list.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -357,7 +376,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/cmps/car/book-app.cmp.js">
+    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-app.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
@@ -371,6 +390,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cmps/books/book-preview.cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
