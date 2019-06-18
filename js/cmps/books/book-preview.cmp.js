@@ -8,3 +8,4 @@ Vue.component('book-preview', {
         </li>
 `,
 })
+
