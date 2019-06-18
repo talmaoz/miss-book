@@ -22,16 +22,16 @@ body {
     padding: 10px;
 }
 
-.car-list {
+.book-list {
     list-style: none;
 }
-.car-list li {
+.book-list li {
     display: inline-block;
     padding: 20px;
     background-color: lightblue;
     margin: 5px;
 }
 
-.car-list img {
+.book-list img {
     width: 100px;
 }
