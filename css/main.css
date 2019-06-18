@@ -1,37 +1,15 @@
 
 /* Components CSS */
-/*@import './counter.css';*/
-/*@import './user-details.css';*/
+@import './book-list.css';
+@import './book-filter.css';
 
 
 body {
-    background-color: lightgreen;
+    background-color: black;
 }
 
-.more-info {
-    background-color: lightblue;
-    padding: 20px;
+.book-app h1{
+    color: antiquewhite;
 }
 
-.todo-done {
-    text-decoration: line-through;
-}
 
-.todo-app {
-    background-color: azure;
-    padding: 10px;
-}
-
-.book-list {
-    list-style: none;
-}
-.book-list li {
-    display: inline-block;
-    padding: 20px;
-    background-color: lightblue;
-    margin: 5px;
-}
-
-.book-list img {
-    width: 100px;
-}

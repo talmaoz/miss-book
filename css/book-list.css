@@ -1,0 +1,14 @@
+.book-list {
+    list-style: none;
+}
+.book-list li {
+    display: inline-block;
+    padding: 15px;
+    background-color: lightblue;
+    margin: 3px;
+}
+
+.book-list img {
+    width: 140px;
+    height: 150px;
+}
