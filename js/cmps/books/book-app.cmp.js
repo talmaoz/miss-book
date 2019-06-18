@@ -24,6 +24,7 @@ export default {
             <book-details
                 v-if="selectedBook"
                 :book="selectedBook"
+                @back-to-list="backToList"
             >
             </book-details>
         </section>
@@ -48,7 +49,10 @@ export default {
         setSelectedBook(selectedBook) {
             this.selectedBook = selectedBook
             console.log('emitSelectedBook =  ', selectedBook)
-        }
+        },
+        backToList() {
+            this.selectedBook = null
+        },
     },
     components: {
         bookList,

@@ -2,7 +2,7 @@ export default {
     props: ['book'],
     template: `
         <div class="book-details">
-            <h2>Book Details:</h2>
+            <button @click="emitBackToList">Back To List</button>
             <h3>{{book.title}}</h3>
             <h4>{{book.price}}$</h4>
             <h4>Published: {{book.publishedDate}}</h4>
@@ -15,6 +15,11 @@ export default {
         saleTxt() {
             if (this.book.isOnSale) return "On Sale!!"
             return ''
+        },
+    },
+    methods: {
+        emitBackToList () {
+            this.$emit('back-to-list', '')
         },
     },
 }

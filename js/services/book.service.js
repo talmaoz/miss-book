@@ -34,7 +34,7 @@ function generateBooks() {
 
 function createBook() {
     let imgBaseUrl = 'http://coding-academy.org/books-photos/'
-    let book = {
+    return {
         id: utilService.makeId(),
         title: utilService.makeLorem(10),
         publishedDate: utilService.getRandomInt(1900, 2000),
@@ -43,7 +43,5 @@ function createBook() {
         pages: utilService.getRandomInt(50, 900),
         isOnSale: utilService.getRandomInt(0, 100) > 80,
     }
-    if (book.isOnSale) console.log('in service: book.isOnSale = ', book.isOnSale, 'title= ', book.title)
-    return book;
 }
 
