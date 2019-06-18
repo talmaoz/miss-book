@@ -1,9 +1,5 @@
 'use strict';
 
-import myCounter from './cmps/my-counter.cmp.js';
-import './cmps/user-details.cmp.js';
-import './cmps/todo-app.cmp.js';
-import './cmps/my-form.cmp.js';
 import carApp from './cmps/car/car-app.cmp.js';
 
 
@@ -43,7 +39,6 @@ var app = new Vue({
         }
     },
     components: {
-        carApp, 
-        myCounter
+        carApp,
     }
 })
