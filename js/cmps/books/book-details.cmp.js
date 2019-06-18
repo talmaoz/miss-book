@@ -1,7 +1,7 @@
-Vue.component('book-details', {
+export default {
     props: ['book'],
     template: `
-        <div>
+        <div class="book-details">
             <h2>Book Details:</h2>
             <h3>{{book.title}}</h3>
             <h4>{{book.price}}$</h4>
@@ -17,5 +17,6 @@ Vue.component('book-details', {
             return ''
         },
     },
-})
+}
+
 

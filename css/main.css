@@ -2,6 +2,7 @@
 /* Components CSS */
 @import './book-list.css';
 @import './book-filter.css';
+@import './book-details.css';
 
 
 body {

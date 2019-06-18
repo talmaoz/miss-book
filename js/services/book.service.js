@@ -43,6 +43,7 @@ function createBook() {
         pages: utilService.getRandomInt(50, 900),
         isOnSale: utilService.getRandomInt(0, 100) > 80,
     }
+    if (book.isOnSale) console.log('in service: book.isOnSale = ', book.isOnSale, 'title= ', book.title)
     return book;
 }
 

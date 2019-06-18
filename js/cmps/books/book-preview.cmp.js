@@ -1,4 +1,4 @@
-Vue.component('book-preview', {
+export default {
     props: ['book'],
     template: `
         <li v-on:click="emitSelectedBook">
@@ -12,5 +12,5 @@ Vue.component('book-preview', {
             this.$emit('book-clicked', this.book)
         },
     },
-})
+}
 

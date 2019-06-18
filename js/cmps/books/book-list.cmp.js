@@ -1,4 +1,4 @@
-import './book-preview.cmp.js';
+import bookPreview from './book-preview.cmp.js';
 
 export default {
     props: ['books'],
@@ -18,5 +18,8 @@ export default {
         emitBookClickedToApp (clickedBook) {
             this.$emit('book-selected', clickedBook)
         },
+    },
+    components: {
+        bookPreview,
     },
 }

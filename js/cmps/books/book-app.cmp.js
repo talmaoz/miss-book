@@ -1,13 +1,18 @@
 import bookService from '../../services/book.service.js'
 import bookList    from './book-list.cmp.js'
 import bookFilter  from './book-filter.cmp.js'
+import bookDetails from './book-details.cmp.js'
 
 export default {
     template: `
         <section class="book-app">
             <h1>Book App</h1>
             
-            <book-filter @set-filter="setFilter"></book-filter>
+            <book-filter 
+                v-if="!selectedBook"
+                @set-filter="setFilter"
+            >    
+            </book-filter>
             
             <book-list 
                 v-if="!selectedBook"
@@ -15,6 +20,12 @@ export default {
                 @book-selected="setSelectedBook"
             >
             </book-list>
+                
+            <book-details
+                v-if="selectedBook"
+                :book="selectedBook"
+            >
+            </book-details>
         </section>
     `,
     data() {
@@ -36,11 +47,13 @@ export default {
         },
         setSelectedBook(selectedBook) {
             this.selectedBook = selectedBook
+            console.log('emitSelectedBook =  ', selectedBook)
         }
     },
     components: {
         bookList,
-        bookFilter
+        bookFilter,
+        bookDetails,
     },
     created() {
         // created
