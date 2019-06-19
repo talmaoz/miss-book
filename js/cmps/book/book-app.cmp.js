@@ -43,7 +43,6 @@ export default {
             filter: null,
             books: [],
             selectedBook: null,
-            isBooksPrmResolved: false,
             booksErr: {isErr: false, errMsg: ''},
         }
     },
@@ -74,7 +73,6 @@ export default {
         let booksPrm = bookService.query()
         booksPrm
             .then((booksFromDb) => {
-                console.log('Hello there :)')
                 this.books = booksFromDb
             })
             .catch((serverErr) => {
@@ -83,4 +81,3 @@ export default {
             })
     },
 }
-
