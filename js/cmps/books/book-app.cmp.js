@@ -8,32 +8,43 @@ export default {
         <section class="book-app">
             <h1>Book App</h1>
             
-            <book-filter 
-                v-if="!selectedBook"
-                @set-filter="setFilter"
-            >    
-            </book-filter>
+            <h2 v-if="booksErr.isErr">{{booksErr.errMsg}}</h2>
             
-            <book-list 
-                v-if="!selectedBook"
-                :books="booksForDisplay"
-                @book-selected="setSelectedBook"
+            <div
+                class="book-app-inner-container"
+                v-if="!booksErr.isErr"
             >
-            </book-list>
+                <book-filter 
+                        v-if="!selectedBook"
+                        @set-filter="setFilter"
+                    >    
+                    </book-filter>
+                    
+                    <book-list 
+                        v-if="!selectedBook"
+                        :books="booksForDisplay"
+                        @book-selected="setSelectedBook"
+                    >
+                    </book-list>
+                        
+                    <book-details
+                        v-if="selectedBook"
+                        :book="selectedBook"
+                        @back-to-list="backToList"
+                    >
+                    </book-details>
+            </div>
+            
                 
-            <book-details
-                v-if="selectedBook"
-                :book="selectedBook"
-                @back-to-list="backToList"
-            >
-            </book-details>
         </section>
     `,
     data() {
         return {
             filter: null,
-            books: bookService.query(),
+            books: [],
             selectedBook: null,
+            isBooksPrmResolved: false,
+            booksErr: {isErr: false, errMsg: ''},
         }
     },
     computed: {
@@ -60,7 +71,16 @@ export default {
         bookDetails,
     },
     created() {
-        // created
+        let booksPrm = bookService.query()
+        booksPrm
+            .then((booksFromDb) => {
+                console.log('Hello there :)')
+                this.books = booksFromDb
+            })
+            .catch((serverErr) => {
+                this.booksErr.isErr  = true
+                this.booksErr.errMsg = serverErr
+            })
     },
 }
 

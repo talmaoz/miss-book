@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 
-.book-app h1{
+.book-app h1, .book-app h2{
     color: antiquewhite;
 }
 
