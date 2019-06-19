@@ -1,14 +1,15 @@
 import {storageService} from './storage.service.js'
 import {utilService} from './util.service.js'
 
-const SIMULATE_SERVER_ERR = false
-
 export default {
     query
 }
 
-const BOOKS_KEY = 'books';
-const ASYNC_DELAY = 3 * 1000
+const BOOKS_KEY = 'books'
+
+// Simulation controllers:
+const SIMULATED_SERVER_DELAY = 1.5 * 1000
+const SIMULATE_SERVER_ERR    = false
 
 function query() {
     let books = storageService.load(BOOKS_KEY);
@@ -18,11 +19,13 @@ function query() {
     }
     if (SIMULATE_SERVER_ERR) books = null
     return new Promise((resolve, reject) => {
-        if (!books) {
-            reject(`Couldn't retrieve data from server.`)
-        } else {
-            resolve(books)
-        }
+        setTimeout(()=>{
+            if (!books) {
+                reject(`Couldn't retrieve data from server.`)
+            } else {
+                resolve(books)
+            }
+        }, SIMULATED_SERVER_DELAY)
     })
 }
 
